@@ -9,8 +9,11 @@ import MainList from './components/MainList/MainList';
 function App() {
   return (
    <>
-      <TaskBar/>
-      <MainList/>
+   <div className=""><TaskBar/></div>
+   <div className=' row '>
+      <div className="col-sm-3 text-muted bg-dark"><MainList/></div>
+      <div className="col-sm-8  bg-danger "><MainList/></div>
+      </div>
    </>
   );
 }
