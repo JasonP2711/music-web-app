@@ -1,0 +1,17 @@
+.bg{
+    background: #555555;
+}
+
+.listTaskBar{
+    list-style: none;
+    margin: 35px 1100px;
+}
+
+.item{
+    padding-left: 20px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
