@@ -1,0 +1,25 @@
+
+.container{
+    height: 80vh;
+    position: relative;
+}
+
+.areaList{
+    position: absolute;
+    top: 40px;
+    height: 610px;
+    width: 400px;
+    border: solid black 2px;
+}
+
+.listSong{
+    padding: 30px 20px;
+}
+.heightList{
+    height: 550px;
+    list-style: none;
+}
+
+.itemMusic{
+    text-decoration: none;
+}

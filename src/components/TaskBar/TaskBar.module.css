@@ -4,7 +4,8 @@
 
 .listTaskBar{
     list-style: none;
-    /* margin: 35px 10px; */
+    padding-left: 1250px;
+    padding-top:  20px;
 }
 
 .item{
