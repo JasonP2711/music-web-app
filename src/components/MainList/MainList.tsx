@@ -8,10 +8,10 @@ function MainList() {
       <div className={Style.container}>
         <div className={Style.areaList}>
           <div className={Style.listSong}>
-            <ul className={`overflow-scroll hover: text-info ${Style.heightList}`}>
+            <ul className={`overflow-scroll  ${Style.heightList}`}>
               {dataSong.map((item, index) => (
-                <li className="p-2 `">
-                  <a className={`text-white-50 ${Style.itemMusic}`} href="">
+                <li className={`p-2 ${Style.hover}`}>
+                  <a className={` ${Style.itemMusic}`} href="">
                     {item.name} - {item.author}
                   </a>
                 </li>

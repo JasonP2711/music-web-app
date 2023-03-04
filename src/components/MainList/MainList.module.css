@@ -22,4 +22,9 @@
 
 .itemMusic{
     text-decoration: none;
+    color: azure;
+}
+
+.itemMusic:hover{
+    color: rgb(14, 150, 204);
 }
