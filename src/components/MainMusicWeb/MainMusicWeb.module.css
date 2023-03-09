@@ -5,12 +5,16 @@
 .areaList{
     margin: 2vh 12vh;
     border: solid 2px black;
-    height: 55vh;
+    height: 45vh;
     width: 120vh;
 }
 .list{
-    color: white;
+    color: black;
 }
 .list:hover{
     color: rgb(96, 148, 224);
+}
+
+.heightList{
+    height: 45vh;
 }

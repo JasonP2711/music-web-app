@@ -3,6 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import DataSong from "./ListSong.json";
 import logo from "./logo.svg";
 import "./App.css";
+import { DatePicker } from 'antd';
 import TaskBar from "./components/TaskBar/TaskBar";
 import MainList from "./components/MainList/MainList";
 import MainMusicWeb from "./components/MainMusicWeb/MainMusicWeb";
@@ -20,7 +21,7 @@ function App() {
         <div className="col-3 text-muted bg-dark">
           <MainList />
         </div>
-        <div className="col-9  bg-danger ">
+        <div className="col-9 ">
           <MainMusicWeb />
         </div>
       </div>

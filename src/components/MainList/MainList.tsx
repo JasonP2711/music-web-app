@@ -6,6 +6,7 @@ function MainList() {
   return (
     <>
       <div className={Style.container}>
+        <h2>Liên quan</h2>
         <div className={Style.areaList}>
           <div className={Style.listSong}>
             <ul className={`overflow-scroll  ${Style.heightList}`}>
