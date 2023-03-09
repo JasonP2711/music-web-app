@@ -44,7 +44,56 @@ function MainMusicWeb() {
             </ul>
             <div>
               <h2>Artist</h2>
-              
+              <div>
+                <ul className="d-flex list-unstyled">
+                  <li className="px-5 py-3">
+                    <img
+                      height={130}
+                      src={data[1].links.images[0].url}
+                      alt=""
+                      className="border border-primary rounded-circle "
+                    />
+                    <p className="text-center"> {data[1].author}</p>
+                  </li>
+                  <li className="px-5 py-3">
+                    <img
+                      height={130}
+                      src={data[32].links.images[0].url}
+                      alt={`The best of ${data[32].author}`}
+                      className="border border-primary rounded-circle "
+                      
+                    />
+                    <p className="text-center"> {data[32].author}</p>
+                  </li>
+                  <li className="px-5 py-3">
+                    <img
+                      height={130}
+                      src={data[38].links.images[0].url}
+                      alt=""
+                      className="border border-primary rounded-circle "
+                    />
+                    <p className="text-center"> {data[38].author}</p>
+                  </li>
+                  <li className="px-5 py-3">
+                    <img
+                      height={130}
+                      src={data[51].links.images[0].url}
+                      alt=""
+                      className="border border-primary rounded-circle "
+                    />
+                    <p className="text-center"> {data[51].author}</p>
+                  </li>
+                  <li className="px-5 py-3">
+                    <img
+                      height={130}
+                      src={data[49].links.images[0].url}
+                      alt=""
+                      className="border border-primary rounded-circle "
+                    />
+                    <p className="text-center"> {data[49].author}</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
