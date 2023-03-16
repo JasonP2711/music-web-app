@@ -10,7 +10,7 @@ interface DataType {
 }
 
 function MainMusicWeb() {
-  const {itemSong,ListSong,songPlay} = useContext<any>(Context);
+  const {itemSong,ListSong,songPlay,handlePrevious,handleNext,handleRelate,relateSong}= useContext<any>(Context);
   return (
     <>
       <div>
@@ -22,7 +22,7 @@ function MainMusicWeb() {
                   {ListSong.map((item: any, index:any) => {
                     return (
                       <>
-                        <tr onClick={()=> songPlay(item.id)} className={` ${Style.listhover}`}>
+                        <tr key={item.id} onClick={()=> {songPlay(item.id); handleRelate(item.author)}} className={` ${Style.listhover}`}>
                           <th className={`p-1`} key={index}>
                             <img
                               height={40}
@@ -35,7 +35,7 @@ function MainMusicWeb() {
                             {item.author}
                           </th>
                           <th className={`p-3`} key={index}>
-                            <a href="item"><FaDownload /></a>
+                            <a href={item.url}><FaDownload /></a>
                             
                           </th>
                         </tr>
@@ -51,6 +51,7 @@ function MainMusicWeb() {
                 <div className={`d-flex container mx-5`}>
                 <div className="mx-4">
                     <img
+                     
                       src={data[1].links.images[0].url}
                       alt=""
                       className={`border border-primary rounded-circle ${Style.hover}`}
@@ -59,6 +60,7 @@ function MainMusicWeb() {
                   </div>
                   <div className="mx-4" >
                     <img
+                     
                       height={130}
                       src={data[32].links.images[0].url}
                       alt={`The best of ${data[32].author}`}
@@ -69,6 +71,7 @@ function MainMusicWeb() {
                   </div>
                   <div className="mx-4" >
                     <img
+                      
                       height={130}
                       src={data[38].links.images[0].url}
                       alt=""
@@ -78,6 +81,7 @@ function MainMusicWeb() {
                   </div>
                   <div className="mx-4">
                     <img
+                     
                       height={130}
                       src={data[51].links.images[0].url}
                       alt=""
@@ -87,6 +91,7 @@ function MainMusicWeb() {
                   </div>
                   <div className="mx-4">
                     <img
+                     
                       height={130}
                       src={data[49].links.images[0].url}
                       alt=""

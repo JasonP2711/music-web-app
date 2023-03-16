@@ -13,6 +13,8 @@ import ListSong from "./ListSong.json";
 
 function App() {
   const [itemSong,setItemsong] = useState<any>(ListSong[0]);
+  const [relateSong,setRelateSong] = useState<any>(ListSong);
+  console.log("relate: " + relateSong);
   const songPlay = (song:any) =>{
     const chooseSong = ListSong.find(item=>item.id===song);
     console.log(chooseSong);
@@ -24,25 +26,29 @@ function App() {
     }
   }
 
+  const handleRelate = (author:any) =>{
+    const relate = ListSong.filter((item)=>item.author==author);
+    setRelateSong(relate);
+    console.log("hello")
+  }
+
   const handlePrevious = (song:any)=>{
     setItemsong(ListSong[song.id-1])
-    console.log(song.id)
   }
 
   const handleNext = (song:any)=>{
     setItemsong(ListSong[song.id+1])
-    console.log(song.id)
   }
 
 
   console.log("state: " + itemSong.id);
   return (
-    <Context.Provider value={{itemSong,ListSong,songPlay,handlePrevious,handleNext}}>
-      <div className="">
+    <Context.Provider value={{itemSong,ListSong,songPlay,handlePrevious,handleNext,handleRelate,relateSong}}>
+      <div>
         <TaskBar />
       </div>
       {/* tạo cột khớp với màn hình với container-fluid  */}
-      <div className="container-fluid"> 
+      <div  style={{background: "gray"}} className="container-fluid"> 
       <div className=" row ">
         <div className="col-3 text-muted bg-dark">
           <MainList />
