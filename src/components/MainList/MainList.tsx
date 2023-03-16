@@ -9,7 +9,7 @@ function MainList() {
         <h2>Liên quan</h2>
         <div className={Style.areaList}>
           <div className={Style.listSong}>
-            <ul className={`overflow-scroll  ${Style.heightList}`}>
+            <ul style={{overflow: "scroll"}} className={` ${Style.heightList}`}>
               {dataSong.map((item, index) => (
                 <li className={`p-2 ${Style.hover}`}>
                   <a className={` ${Style.itemMusic}`} href="">

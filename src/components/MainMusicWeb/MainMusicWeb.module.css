@@ -1,12 +1,13 @@
 .container{
-
+    
 }
 
 .areaList{
     margin: 2vh 12vh;
     border: solid 2px black;
     height: 45vh;
-    width: 120vh;
+    width: 105vh;
+    background: #444654;
 }
 .list{
     color: black;
@@ -17,4 +18,24 @@
 
 .heightList{
     height: 45vh;
+}
+
+.hover{
+    height:130px;
+    transition: 1.5s;
+}
+
+.hover:hover{
+    height: 150px;
+    filter: brightness(50%);
+    
+}
+
+.listhover{
+    width: 110px;
+}
+
+.listhover:hover{
+    background: rgb(53, 52, 52);
+    color: rgb(235, 143, 24);
 }
